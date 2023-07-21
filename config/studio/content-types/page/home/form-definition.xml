@@ -691,14 +691,49 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>embedded-content</type>
+					<type>components</type>
 					<id>test1</id>
 					<title>Test1</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>contentType</name>
-							<value>/component/test1</value>
+							<name>allowShared</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>allowEmbedded</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowse</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearch</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>baseRepoPath</name>
+							<value>/site/components</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>baseBrowsePath</name>
+							<value>/site/components</value>
+								<type>string</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>*</value>
+								<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value></value>
 								<type>string</type>
 						</property>
 					</properties>

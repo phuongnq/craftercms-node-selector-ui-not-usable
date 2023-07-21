@@ -173,7 +173,7 @@
 						</property>
 						<property>
 							<name>itemManager</name>
-							<value>components-header,test1,featuresComponents,components-left-rail</value>
+							<value>components-header,test1,test2,featuresComponents,components-left-rail</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
@@ -724,6 +724,44 @@
 						<property>
 							<name>type</name>
 							<value>/component/test1</value>
+								<type>string</type>
+						</property>
+					</properties>
+				</datasource>
+				<datasource>
+					<type>shared-content</type>
+					<id>test2</id>
+					<title>Test2</title>
+					<interface>item</interface>
+					<properties>
+						<property>
+							<name>enableCreateNew</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableBrowseExisting</name>
+							<value>true</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>enableSearchExisting</name>
+							<value>false</value>
+								<type>boolean</type>
+						</property>
+						<property>
+							<name>repoPath</name>
+							<value>/site/</value>
+								<type>content-path-input</type>
+						</property>
+						<property>
+							<name>browsePath</name>
+							<value>/site/</value>
+								<type>content-path-input</type>
+						</property>
+						<property>
+							<name>type</name>
+							<value>/component/test2</value>
 								<type>string</type>
 						</property>
 					</properties>

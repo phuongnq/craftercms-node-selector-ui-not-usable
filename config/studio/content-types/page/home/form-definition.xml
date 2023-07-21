@@ -691,49 +691,39 @@
 					</properties>
 				</datasource>
 				<datasource>
-					<type>components</type>
+					<type>shared-content</type>
 					<id>test1</id>
 					<title>Test1</title>
 					<interface>item</interface>
 					<properties>
 						<property>
-							<name>allowShared</name>
+							<name>enableCreateNew</name>
 							<value>true</value>
 								<type>boolean</type>
 						</property>
 						<property>
-							<name>allowEmbedded</name>
+							<name>enableBrowseExisting</name>
 							<value>true</value>
 								<type>boolean</type>
 						</property>
 						<property>
-							<name>enableBrowse</name>
+							<name>enableSearchExisting</name>
 							<value>false</value>
 								<type>boolean</type>
 						</property>
 						<property>
-							<name>enableSearch</name>
-							<value>false</value>
-								<type>boolean</type>
+							<name>repoPath</name>
+							<value>/site/</value>
+								<type>content-path-input</type>
 						</property>
 						<property>
-							<name>baseRepoPath</name>
-							<value>/site/components</value>
-								<type>string</type>
+							<name>browsePath</name>
+							<value>/site/</value>
+								<type>content-path-input</type>
 						</property>
 						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>*</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
+							<name>type</name>
+							<value>/component/test1</value>
 								<type>string</type>
 						</property>
 					</properties>
